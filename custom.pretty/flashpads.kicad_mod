@@ -1,0 +1,135 @@
+(footprint "flashpads"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9325c96b-d4ef-48b6-9b35-e02c81ebcd09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "flashpads"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a07b981e-d6fc-40d6-9910-15437aefefea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9fd31b96-8802-484c-814f-0876ec996943")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "031f4340-f7c8-4ebd-983d-f3683634ad49")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9922325-9514-4ff5-ae5e-fb6c8cbd1556")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_text user "R"
+		(at 1.27 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "1e99c8b9-9a9b-4d31-a5e3-98e63bf7bfc3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "-"
+		(at 0 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "7aad1b82-e778-4737-985b-cef6fc0ad5d6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "+"
+		(at -1.27 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "b266e993-752a-4e4e-94ea-91927a5ea0c4")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "80e86c3d-5f1f-42a8-9b49-891f679d9f2c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.27 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "f6bcdddb-5593-42fc-bb4d-1e7e14d8a07e")
+	)
+	(pad "2" smd oval
+		(at 0 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "e96f8645-5e9e-4244-aaee-7ada898b482f")
+	)
+	(pad "3" smd oval
+		(at 1.27 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "a347122f-985d-46da-9ac9-9ae1f5135796")
+	)
+)

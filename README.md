@@ -1,2 +1,10 @@
 # S21Evo
-Custom driver for Convoy S21E flashlights
+NOTE: This project is still WIP. An older revision is currently being prototyped and has served as a software development platform. The state published in this repository includes a variety of bugfixes and improvements over this version, but is as of now UNTESTED. The current firmware does not support these changes yet. Please do not order PCBs based off this repository (and if you do, don't complain about problems).
+
+## Introduction
+This project was born from the fact that the Convoy S21E is - in my opinion - one of the best budget flashlights out there. It is fairly compact for a 21700 class flashlight. 21700 batteries are a great compromise between size and capacity. It can fit a variety of emitters and optics. It is available in a lot of nice colors - and all that while being very affordable. I do, however, not like Convoys E-Switch drivers much due to some UI choices that do not reflect my preference. I also wanted faster charging and powerbank functionality included.
+
+## Features
+The S21Evo BST driver is a high-efficiency 6V 5A boost driver. It is based on the popular MPS MP3432 boost chip. Two shunts (1 Ohm and 7 mOhm) allow for a wide dynamic range (~100uA to 5A). The battery management (15W charging, 15W reverse powerbank functionality with proper USB-C handshake) is handled by a MPS MP2722. A STM32C072GBU controls both chips and can be programmed seamlessly via the built-in USB port of the flashlight. Thermal protection, low-voltage protection as well as reverse polarity protection are built in. RGB Aux (2 brightness levels per color) is available.
+
+Some features I wanted to add (buck-boost supply for the MCU to allow for wider input voltage range, full 8bit RGB Aux, a MCU with built-in DAC instead of low-pass-filtered PWM) sadly had to be omitted due to severe space constraints in the S21E body. Fitting a USB-C port, battery spring, 2 DC-DC converters (15W and 30W) with as much filter capacity as possible as well as a QFN MCU in the given space was already a difficult task.

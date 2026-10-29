@@ -1,0 +1,111 @@
+(footprint "spring_9p5mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4537cd8e-640f-4bb5-8234-8571029c58c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "spring_9p5mm"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9157e9d4-ba13-4c95-b7ad-6b8f6f7be605")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9fc3e7d6-f803-47e4-88ce-9de783056eec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a4adbd2d-db4c-4b1f-be71-de6e133e0188")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "def0b0e8-4fb6-46e1-9cc1-0873edbf56d2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center 0 0)
+		(end 3.75 0)
+		(stroke
+			(width 3)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Mask")
+		(uuid "5bc07351-b2bb-4b3a-8d98-11c86fa441b6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b3ebbcbe-0d92-479f-b4c1-b995bdb3593b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 10.5 10.5)
+		(layers "F.Cu")
+		(uuid "ca5f0ea5-a87b-4ab1-9aee-c53701136e33")
+	)
+	(model "${KIPRJMOD}/../custom.pretty/spring_6mm.wrl"
+		(offset
+			(xyz 0 0 0.45)
+		)
+		(scale
+			(xyz 0.39 0.39 0.39)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
